@@ -10,7 +10,6 @@ import SearchFeed from "./components/SearchFeed";
 const App = () => (
   <div>
     <BrowserRouter>
-      {/* sx={{ backgroundColor: "#000" }} */}
       <Box>
         <NavigateBar />
         <Routes>

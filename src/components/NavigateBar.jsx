@@ -10,13 +10,20 @@ const NavigateBar = () => (
     alignItems="center"
     sx={{
       position: "sticky",
-      background: "#000",
+      background: "rgb(25, 0, 42)",
       top: 0,
       justifyContent: "space-between",
     }}
   >
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
-      <img src={Logo} alt="logo" width={60} />
+      <img
+        src={Logo}
+        alt="logo"
+        width={65}
+        style={{
+          paddingLeft: "50px",
+        }}
+      />
     </Link>
     <SearchBar />
   </Stack>

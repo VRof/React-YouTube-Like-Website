@@ -13,7 +13,7 @@ const SearchBar = () => (
       border: "3px solid MediumOrchid",
       pl: 2,
       boxShadow: "none",
-      mr: { sm: 5 },
+      mr: { sm: "40%" },
       backgroundColor: "darkorchid",
     }}
   >
