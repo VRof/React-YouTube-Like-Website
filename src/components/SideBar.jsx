@@ -5,6 +5,9 @@ import SchoolIcon from "@mui/icons-material/School";
 import PodcastsIcon from "@mui/icons-material/Podcasts";
 import CelebrationIcon from "@mui/icons-material/Celebration";
 import { Typography } from "@mui/material";
+import SportsIcon from "@mui/icons-material/Sports";
+import TerminalIcon from "@mui/icons-material/Terminal";
+import { Link } from "react-router-dom";
 
 const category = [
   { name: "Fun", icon: <CelebrationIcon /> },
@@ -12,6 +15,8 @@ const category = [
   { name: "Gaming", icon: <VideogameAssetIcon /> },
   { name: "Education", icon: <SchoolIcon /> },
   { name: "Podcasts", icon: <PodcastsIcon /> },
+  { name: "Sport", icon: <SportsIcon /> },
+  { name: "Coding", icon: <TerminalIcon /> },
 ];
 
 const SideBar = ({ selected, setSelected }) => (
@@ -38,7 +43,7 @@ const SideBar = ({ selected, setSelected }) => (
       </button>
     ))}
     <Typography
-      //variant="caption"
+      variant="subtitle1"
       fontWeight="bold"
       fontSize="15px"
       color="yellow"
@@ -46,6 +51,17 @@ const SideBar = ({ selected, setSelected }) => (
     >
       created by Vitaly Rofman
     </Typography>
+    <Link to="https://www.linkedin.com/in/vitaly-rofman/">
+      <Typography
+        variant="subtitle2"
+        fontWeight="bold"
+        fontSize="18px"
+        color="gold"
+        ml="25%"
+      >
+        contact me
+      </Typography>
+    </Link>
   </Stack>
 );
 

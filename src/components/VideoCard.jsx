@@ -3,10 +3,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function VideoCard(video) {
-  console.log(video);
   const videoId = video.video.id.videoId;
   const snippet = video.video.snippet;
-  console.log(videoId, snippet);
   return (
     <Card
       sx={{
@@ -27,7 +25,7 @@ function VideoCard(video) {
           <Typography variant="subtitle1" fontWeight="bold" color="#FFF3CD">
             {snippet?.title.slice(0, 120)}
           </Typography>
-          <Link to={`/channel/${snippet.channelId}}`}>
+          <Link to={`/channel/${snippet?.channelId}`}>
             <Typography variant="subtitle2" fontWeight="bold" color="#FF6F00">
               {snippet?.channelTitle}
             </Typography>
