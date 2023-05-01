@@ -42,3 +42,16 @@ body {
 .category-btn:hover span {
   color: rgb(255, 183, 0) !important;
 }
+
+.home-btn {
+  width: 90px;
+  margin-left: 60%;
+  margin-top: 10%;
+  border-radius: 40%;
+}
+
+.home-btn:hover {
+  /* filter: blur(2px); */
+  filter: brightness(150%);
+  transition: all 0.2s ease;
+}

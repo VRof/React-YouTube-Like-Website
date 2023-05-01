@@ -18,7 +18,7 @@ const FeedPage = () => {
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
       <Box
         sx={{
-          height: { sx: "auto", md: "90vh" },
+          height: { sx: "auto", md: "87vh" },
           borderRight: "1px solid #3d103b",
           px: { sx: 0, md: 2 },
         }}
@@ -29,7 +29,7 @@ const FeedPage = () => {
         p={2}
         sx={{
           overflowY: "auto",
-          height: "90vh",
+          height: "86vh",
           flex: 2,
         }}
       >

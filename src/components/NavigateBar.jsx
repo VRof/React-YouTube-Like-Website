@@ -1,7 +1,7 @@
 import React from "react";
 import { Stack } from "@mui/material";
 import { Link } from "react-router-dom";
-import Logo from "../utils/logo.jpg";
+import Logo from "../utils/logo.png";
 import SearchBar from "./SearchBar";
 
 const NavigateBar = () => (
@@ -16,14 +16,7 @@ const NavigateBar = () => (
     }}
   >
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
-      <img
-        src={Logo}
-        alt="logo"
-        width={65}
-        style={{
-          paddingLeft: "50px",
-        }}
-      />
+      <img className="home-btn" src={Logo} alt="logo" />
     </Link>
     <SearchBar />
   </Stack>

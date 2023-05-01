@@ -24,7 +24,7 @@ const SideBar = ({ selected, setSelected }) => (
     direction="row"
     sx={{
       overflowY: "auto",
-      height: { sx: "auto", md: "100%" },
+      height: { sx: "auto", md: "98%" },
       flexDirection: { md: "column" },
     }}
   >
