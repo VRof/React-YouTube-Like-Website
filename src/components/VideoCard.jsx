@@ -8,7 +8,7 @@ function VideoCard(video) {
   return (
     <Card
       sx={{
-        width: { md: "290px", xs: "100%" },
+        width: { xs: "100%", md: "290px" },
         boxShadow: "none",
         borderRadius: "0",
       }}
@@ -17,7 +17,7 @@ function VideoCard(video) {
         <CardMedia
           image={snippet?.thumbnails?.high?.url}
           alt={snippet?.title}
-          sx={{ width: 360, height: 180 }}
+          sx={{ width: { xs: "100%", sm: "360" }, height: 180 }}
         />
       </Link>
       <CardContent
