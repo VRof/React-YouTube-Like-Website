@@ -17,7 +17,10 @@ const ChannelCard = ({ details, margin }) => {
         marginTop: margin,
       }}
     >
-      <Link to={`/channel/${details?.id?.channelId || details?.id}`}>
+      <Link
+        to={`/channel/${details?.id?.channelId || details?.id}`}
+        style={{ textDecoration: "none" }}
+      >
         <CardContent
           sx={{
             display: "flex",
@@ -30,7 +33,7 @@ const ChannelCard = ({ details, margin }) => {
           <CardMedia
             image={details?.snippet?.thumbnails?.high?.url}
             alt={details?.snippet?.title}
-            sx={{ borderRadius: "50%", height: "200px", mb: 2 }}
+            sx={{ height: "200px", width: "200px", borderRadius: "50%", mb: 2 }}
           ></CardMedia>
           <Typography variant="h6" color="#FFF3CD">
             {details?.snippet?.title}

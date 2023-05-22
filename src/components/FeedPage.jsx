@@ -29,7 +29,7 @@ const FeedPage = () => {
         p={2}
         sx={{
           overflowY: "auto",
-          height: "86vh",
+          height: "82vh",
           flex: 2,
         }}
       >

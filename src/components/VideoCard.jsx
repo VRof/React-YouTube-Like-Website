@@ -8,7 +8,7 @@ function VideoCard(video) {
   return (
     <Card
       sx={{
-        width: { md: "320px", xs: "100%" },
+        width: { md: "290px", xs: "100%" },
         boxShadow: "none",
         borderRadius: "0",
       }}
@@ -20,12 +20,20 @@ function VideoCard(video) {
           sx={{ width: 360, height: 180 }}
         />
       </Link>
-      <CardContent sx={{ backgroundColor: "#22124B", height: "90px" }}>
-        <Link to={`/video/${videoId}`}>
+      <CardContent
+        sx={{
+          backgroundColor: "#22124B",
+          height: "90px",
+        }}
+      >
+        <Link to={`/video/${videoId}`} style={{ textDecoration: "none" }}>
           <Typography variant="subtitle1" fontWeight="bold" color="#FFF3CD">
-            {snippet?.title.slice(0, 120)}
+            {snippet?.title.slice(0, 60)}
           </Typography>
-          <Link to={`/channel/${snippet?.channelId}`}>
+          <Link
+            to={`/channel/${snippet?.channelId}`}
+            style={{ textDecoration: "none" }}
+          >
             <Typography variant="subtitle2" fontWeight="bold" color="#FF6F00">
               {snippet?.channelTitle}
             </Typography>

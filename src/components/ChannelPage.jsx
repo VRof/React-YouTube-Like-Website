@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import fetchRapidApi from "../utils/fetchRapidApi";
 import ChannelCard from "./ChannelCard";
 import Videos from "./Videos";
+import { alignProperty } from "@mui/material/styles/cssUtils";
+import { style } from "@mui/system";
 
 const ChannelPage = () => {
   const [chanDetails, setChanDetails] = useState();
@@ -36,8 +38,13 @@ const ChannelPage = () => {
         />
         <ChannelCard details={chanDetails} margin="-120px" />
       </Box>
-      <Box display="flex" p="2">
-        <Box sx={{ mr: { sm: "100px" } }}>
+      <Box
+        display="flex"
+        p="2"
+        justifyContent="center"
+        sx={{ ml: { md: "8%" } }}
+      >
+        <Box sx={{ mr: { sm: "100px" }, alignItems: "center" }}>
           <Videos videos={videos} />
         </Box>
       </Box>
